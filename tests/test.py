@@ -1,5 +1,5 @@
 import time
-import ST7789
+import st7789
 import sys 
 from PIL import Image 
 
@@ -12,7 +12,7 @@ display_type = "square"
 # Create ST7789 LCD display class.
 
 if display_type in ("square", "rect", "round"):
-    disp = ST7789.ST7789(
+    disp = st7789.ST7789(
         height=135 if display_type == "rect" else 240,
         rotation=180,
         port=1,
@@ -45,7 +45,7 @@ WIDTH = disp.width
 HEIGHT = disp.height
 disp.set_backlight(1)
 import glob,random
-files = glob.glob("/home/zhangtianyu/Pictures/精选双人照片v2/*g")
+files = glob.glob("/home/zhangtianyu/pictures/精选双人照片v2/*g")
 image_file = random.choice(files)
 image = Image.open(image_file)
 w,h=image.size

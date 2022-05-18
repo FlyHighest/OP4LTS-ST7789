@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: st7789-disp
+Version: 1.0.0
+Summary: st7789 driver
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: None
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
